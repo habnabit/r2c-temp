@@ -60,4 +60,4 @@ class DocStore(object):
         return asJSON(request, {'user': user.name})
 
 
-DocStore().app.run('localhost', 8080)
+DocStore().app.run('localhost', 7070)
