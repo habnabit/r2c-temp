@@ -1,30 +1,30 @@
-type DocId = string;
-type DocList = DocId[];
-type User = string;
+export type DocId = string;
+export type DocList = DocId[];
+export type User = string;
 
-interface Doc {
+export interface Doc {
   content: string;
   youAreOwner: boolean;
   otherUsers: User[];
 }
 
-interface OkResponse {
+export interface OkResponse {
   ok: boolean;
 }
 
-interface NewOwnerPostBody {
+export interface NewOwnerPostBody {
   newOwner: User;
 }
 
-interface UserResponse {
+export interface UserResponse {
   user: User;
 }
 
-interface NewDocPostBody {
+export interface NewDocPostBody {
   content: string;
 }
 
-interface NewDocResponse {
+export interface NewDocResponse {
   created: boolean;
   id?: string;
 }
